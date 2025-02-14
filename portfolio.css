@@ -1,0 +1,136 @@
+body {
+    text-align: center;
+    color: rgb(202, 203, 193);
+    background-color: rgb(0, 33, 53);
+    font-size: 18px;
+    font-family: "Roboto", serif;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/*
+header {
+    background: rgb(0, 33, 53);
+    color: rgb(202, 203, 193);
+    text-align: right;
+}
+*/
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+h1{
+    font-size: 50px;
+    font-family: "DM Serif Text", serif;
+}
+
+h2{
+    font-size: 30px;
+    font-family: "DM Serif Text", serif;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 300px; 
+    background: 
+        linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgba(0, 33, 53) 100%), 
+        url('background.jpg') center/cover no-repeat;
+}
+
+.personal-details {
+    display: flex; 
+    text-align: left; 
+    align-items: center; 
+    justify-content: center;
+    margin-right: 180px;
+    line-height: 2.5;
+}
+
+.personal-details img{
+    margin-right: 50px;
+}
+
+
+table {
+    margin: auto; 
+}
+
+th {
+    background: rgb(202, 203, 193);
+    color: rgb(0, 33, 53);
+    padding: 10px;
+}
+
+table tr:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: background 0.3s ease;
+}
+
+
+img, video, iframe {
+    display: block;
+    margin: auto; 
+    border-radius: 5px;
+}
+
+img{
+    border-radius: 10px;
+}
+
+.media{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+a{
+    color: rgb(67, 146, 241);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+    color: rgb(255, 180, 60);
+    transform: scale(1.05);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 50px; 
+    margin: 20px 0;
+}
+
+.box {
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.1); 
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
