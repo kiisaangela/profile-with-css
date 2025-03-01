@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="portfolio.css">
     <script src="script.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Kiisa Angela</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Kiisa Angela | Portfolio</title>
 </head>
 <body>
+    
     <header>
         <nav>
-            <!-- 
-            <ul>
-                <li><a href="#hobbies">Hobbies</a></li>
-                <li><a href="#results">Semester Results</a></li>
-                <li><a href="#goals">Goals</a></li>
-            </ul>
-             -->
-             <button id="theme-switch">
+            <button id="theme-switch">
                 <svg id="dark-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
                 <svg id="light-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
             </button>
@@ -25,107 +22,158 @@
     </header>
 
     <div class="intro">
-    <h1>KIISA ANGELA</h1>
-    <p>Welcome to my personal webpage! I'm a 2nd Year Computer Science student interested in exploring technology and innovation.<br>
-        In my free time, I enjoy coding, listening to music, and engaging in creative projects.</p>
-    </div>
-    
-    
-    <h2>Personal Details</h2>
-    <div class="personal-details">
-        <img src="prof.jpg" alt="Your Profile Picture" width="200">
-    
-        <div>
-        <b>Full Name:</b> Kiisa Angela<br>
-        <b>Student ID:</b> S23B23/027 , B24258<br>
-        <b>Course and Year:</b> BSc Computer Science, Year 2<br>
-        <b>Hobbies and Interests:</b> Coding, Music, Reading, Movies<br>
+        <h1>KIISA ANGELA</h1>
+        <p>Welcome to my personal webpage! I'm a 2nd Year Computer Science student interested in exploring technology and innovation.<br>
+            In my free time, I enjoy coding, listening to music, and engaging in creative projects.</p>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
         </div>
-    
     </div>
-   
     
-    <section id="hobbies">
-    <h2>Hobby Videos</h2>
-    <div class="media">
-    <video width="560" controls>
-        <source src="recordplayer.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <br>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/-qLcPAO72is?si=nTmV9YMdrK11hwRV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="personal-details">
+            <img src="prof.jpg" alt="Your Profile Picture" width="200">
+            <div class="details-content">
+                <div class="detail-item">
+                    <i class="fas fa-user"></i>
+                    <span><b>Full Name:</b> Kiisa Angela</span>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-id-card"></i>
+                    <span><b>Student ID:</b> S23B23/027 , B24258</span>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span><b>Course and Year:</b> BSc Computer Science, Year 2</span>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-heart"></i>
+                    <span><b>Hobbies and Interests:</b> Coding, Music, Reading, Movies</span>
+                </div>
+            </div>
+        </div>
     </section>
-    
+   
+    <section id="hobbies">
+        <h2>Hobby Videos</h2>
+        <div class="media">
+            <div class="media-item">
+                <video controls>
+                    <source src="recordplayer.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="media-caption">My Record Player Collection</p>
+            </div>
+            <div class="media-item">
+                <iframe 
+                    src="https://www.youtube.com/embed/-qLcPAO72is?si=nTmV9YMdrK11hwRV" 
+                    title="YouTube video player" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen
+                    loading="lazy">
+                </iframe>
+                <p class="media-caption">Featured Music</p>
+            </div>
+        </div>
+    </section>
     
     <section id="results">
-    <h2>Year 1 Semester 1 Results</h2>
-    <table border="1" cellpadding="5" cellspacing="0">
-        <tr>
-            <th>Course Code</th>
-            <th>Course Title</th>
-            <th>Grade</th>
-            <th>Credit Units</th>
-        </tr>
-        <tr>
-            <td>CS101</td>
-            <td>Introduction to Programming</td>
-            <td>A</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>MTH102</td>
-            <td>Calculus I</td>
-            <td>B+</td>
-            <td>4</td>
-        </tr>
-        <tr>
-            <td>PHY103</td>
-            <td>Physics for Computing</td>
-            <td>A-</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>ENG104</td>
-            <td>Technical Writing</td>
-            <td>A</td>
-            <td>2</td>
-        </tr>
-        <tr>
-            <td>CS105</td>
-            <td>Data Structures</td>
-            <td>B</td>
-            <td>3</td>
-        </tr>
-    </table>
+        <h2>Academic Performance</h2>
+        <div class="results-container">
+            <h3>Year 1 Semester 1 Results</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course Code</th>
+                        <th>Course Title</th>
+                        <th>Grade</th>
+                        <th>Credit Units</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CS101</td>
+                        <td>Introduction to Programming</td>
+                        <td><span class="grade grade-a">A</span></td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>MTH102</td>
+                        <td>Calculus I</td>
+                        <td><span class="grade grade-b-plus">B+</span></td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>PHY103</td>
+                        <td>Physics for Computing</td>
+                        <td><span class="grade grade-a-minus">A-</span></td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>ENG104</td>
+                        <td>Technical Writing</td>
+                        <td><span class="grade grade-a">A</span></td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>CS105</td>
+                        <td>Data Structures</td>
+                        <td><span class="grade grade-b">B</span></td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </section>
-    
     
     <div class="container">
-
-    <div class="box">
-    <h2>Links and Navigation</h2>
-    
-        <a href="https://www.pinterest.com/" target="_blank">My Favorite Website</a> <br>
-        <a href="https://pll.harvard.edu/subject/computer-science" target="_blank">University Website</a>
+        <div class="box">
+            <h2><i class="fas fa-link"></i> Quick Links</h2>
+            <div class="links-grid">
+                <a href="https://www.pinterest.com/" target="_blank" class="link-item">
+                    <i class="fab fa-pinterest"></i>
+                    <span>Pinterest</span>
+                </a>
+                <a href="https://pll.harvard.edu/subject/computer-science" target="_blank" class="link-item">
+                    <i class="fas fa-university"></i>
+                    <span>Harvard CS</span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="box">
+            <h2><i class="fas fa-address-card"></i> Contact Me</h2>
+            <div class="contact-info">
+                <a href="mailto:kiisaangela8@gmail.com" class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>kiisaangela8@gmail.com</span>
+                </a>
+                <a href="https://github.com/kiisaangela" target="_blank" class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
     </div>
-    
-    <div class="box">
-    <h2>Contact Information</h2>
-    <p>Email: <a href="mailto:your.email@example.com">kiisaangela8@gmail.com</a></p>
-    <p>Social Media: 
-        <a href="https://github.com/kiisaangela" target="_blank">GitHub</a>
-    </p>
-    </div>
-
-    </div>
-    
     
     <section id="goals">
-    <h2>Career Goals</h2>
-    <p>I aspire to become a software engineer specializing in artificial intelligence and machine learning. My goal is to contribute to innovative technologies that improve daily life.</p>
-    <p>In the future, I plan to work on cutting-edge projects in AI, automation, and cloud computing. I am eager to continuously learn and develop my skills to make a meaningful impact in the tech industry.</p>
+        <h2><i class="fas fa-star"></i> Career Goals</h2>
+        <div class="goals-content">
+            <div class="goal-item">
+                <i class="fas fa-robot"></i>
+                <p>I aspire to become a software engineer specializing in artificial intelligence and machine learning. My goal is to contribute to innovative technologies that improve daily life.</p>
+            </div>
+            <div class="goal-item">
+                <i class="fas fa-cloud"></i>
+                <p>In the future, I plan to work on cutting-edge projects in AI, automation, and cloud computing. I am eager to continuously learn and develop my skills to make a meaningful impact in the tech industry.</p>
+            </div>
+        </div>
     </section>
+    
+    <footer>
+        <p>© 2024 Kiisa Angela. All rights reserved.</p>
+    </footer>
     
 </body>
 </html>
